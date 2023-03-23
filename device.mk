@@ -22,12 +22,8 @@
 # definition file).
 #
 
-# Inherit from sony sm8450-common
-$(call inherit-product, device/sony/sm8450-common/common.mk)
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
+# Inherit from sony nagara
+$(call inherit-product, device/sony/nagara/common.mk)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -38,4 +34,4 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/sony/pdx223/pdx223-vendor.mk)
+$(call inherit-product, vendor/sony/murray/pdx224/pdx224-vendor.mk)

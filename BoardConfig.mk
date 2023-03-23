@@ -14,16 +14,16 @@
 # limitations under the License.
 #
 
-# Inherit from sony sm8450-common
--include device/sony/sm8450-common/BoardConfigCommon.mk
+# Inherit from sony nagara
+include device/sony/nagara/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/pdx223
+DEVICE_PATH := device/sony/pdx224
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-BOARD_KERNEL_CMDLINE += buildproduct=pdx223
-TARGET_KERNEL_CONFIG := vendor/pdx223.config 
+BOARD_KERNEL_CMDLINE += buildproduct=pdx224
+TARGET_KERNEL_CONFIG := vendor/pdx224.config 
 
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
@@ -34,7 +34,7 @@ BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-TARGET_OTA_ASSERT_DEVICE := pdx223,XQ-CT72,XQ-CT54,XQ-CT44,A201SO,SO-51C,SOG06
+TARGET_OTA_ASSERT_DEVICE := pdx224,XQ-CQ44,XQ-CQ54,XQ-CQ72,SO-54C,SOG09,A204SO
 
 # inherit from the proprietary version
--include vendor/sony/pdx223/BoardConfigVendor.mk
+include vendor/sony/murray/pdx224/BoardConfigVendor.mk

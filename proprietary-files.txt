@@ -1,4 +1,4 @@
-# Stock package version: Sony/pdx223/pdx223:12/SKQ1.220714.001/1:user/release-keys
+# Stock package version: Sony/qssi/qssi:13/64.1.A.0.882/064001A000088202006725595:user/release-keys
 
 # Camera
 vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
