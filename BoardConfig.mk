@@ -23,12 +23,7 @@ DEVICE_PATH := device/sony/pdx223
 TARGET_SCREEN_DENSITY := 420
 
 BOARD_KERNEL_CMDLINE += buildproduct=pdx223
-
-TARGET_KERNEL_SOURCE := kernel/sony/sm8450
-TARGET_KERNEL_CONFIG += \
-	gki_defconfig \
-	vendor/pdx223_GKI.config \
-	vendor/waipio_GKI.config
+TARGET_KERNEL_CONFIG := vendor/pdx223.config 
 
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
