@@ -34,4 +34,4 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/sony/murray/pdx224/pdx224-vendor.mk)
+$(call inherit-product, vendor/sony/nagara/pdx224/pdx224-vendor.mk)
