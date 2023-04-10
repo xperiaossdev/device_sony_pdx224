@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_pdx224.mk
+    $(LOCAL_DIR)/cherish_pdx224.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_pdx224-user \
-    aosp_pdx224-userdebug \
-    aosp_pdx224-eng
+    cherish_pdx224-user \
+    cherish_pdx224-userdebug \
+    cherish_pdx224-eng
