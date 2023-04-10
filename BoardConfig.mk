@@ -37,4 +37,4 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_OTA_ASSERT_DEVICE := pdx224,XQ-CQ44,XQ-CQ54,XQ-CQ62,XQ-CQ72,A204SO,SO-54C,SOG09
 
 # inherit from the proprietary version
-include vendor/sony/murray/pdx224/BoardConfigVendor.mk
+include vendor/sony/nagara/pdx224/BoardConfigVendor.mk

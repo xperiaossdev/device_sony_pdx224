@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_pdx224.mk
+    $(LOCAL_DIR)/derp_pdx224.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_pdx224-user \
-    aosp_pdx224-userdebug \
-    aosp_pdx224-eng
+    derp_pdx224-user \
+    derp_pdx224-userdebug \
+    derp_pdx224-eng
