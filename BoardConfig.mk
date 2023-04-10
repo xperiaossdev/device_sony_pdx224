@@ -34,7 +34,12 @@ BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+# OTA Assert
 TARGET_OTA_ASSERT_DEVICE := pdx224,XQ-CQ44,XQ-CQ54,XQ-CQ62,XQ-CQ72,A204SO,SO-54C,SOG09
+
+# Props
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # inherit from the proprietary version
 include vendor/sony/murray/pdx224/BoardConfigVendor.mk
