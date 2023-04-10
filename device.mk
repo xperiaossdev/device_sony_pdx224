@@ -33,5 +33,15 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay/sony \
+
+# Device Overlays
+PRODUCT_PACKAGES += \
+    SonyPDX224SystemUIRes \
+    SonyPDX224FrameworksRes \
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/murray/pdx224/pdx224-vendor.mk)
